@@ -7,3 +7,4 @@ langchain_chroma
 langchain_groq
 langchain_core
 streamlit
+pypdf
