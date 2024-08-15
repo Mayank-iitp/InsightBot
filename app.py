@@ -19,9 +19,16 @@ load_dotenv()
 hf_token = os.getenv("HF_TOKEN")
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
+import streamlit as st
+
+# Set the title that appears on the browser tab
+st.set_page_config(page_title="InsightBot", page_icon=":robot_face:")
+
+
 
 ## set up Streamlit 
-st.title("InsightBot")
+st.title("Welcome to InsightBot")
+st.write("Your RAG based pdf chatbot")
 st.write("Upload Pdf's and chat with their content")
 
 ## Input the Groq API Key
